@@ -13,11 +13,15 @@ body{
 
 .ip1{
     place-items: center;
-    background-image:url(/images/pattern-bg.png);
+    background-image:url(pattern-bg.png);
     text-align: center;
- height: 270px;
+ height: 45vh;
     font-size: 24px;
     z-index: 1;
+}
+.ip1 img{
+    width: 100%;
+    height: 45vh;
 }
 .novalidate{
     width: 40%;
@@ -33,7 +37,7 @@ z-index: 1;
    padding: 1rem 1rem;
 }
 #form input{
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 
 
@@ -43,11 +47,13 @@ z-index: 1;
 #submit1{
     margin-left: -6px;
    
-    height: 49px;
+    height: 70px;
+    width: 80px;
    cursor: pointer;
+   padding: 1.5rem;
   z-index: 1;
    border: 1px solid black;
-    background:black url('/images/icon-arrow.svg') no-repeat center;
+    background:black url('images/icon-arrow.svg') no-repeat center;
 }
 
 .color{
@@ -66,7 +72,7 @@ z-index: 1;
     border-radius: 20px;
     z-index: 1;
     margin-right: 20%;
-    margin-top:-2%;
+    margin-top:6%;
     margin-left: 27%;
     border: black;
 }
@@ -95,7 +101,7 @@ z-index: 1;
     flex: 1 1 70vh;
     position:relative;
     z-index: 0;
-    margin-top: -23%;
+    
 }
 #map .loading-text {
     position: absolute;
@@ -128,4 +134,13 @@ z-index: 1;
     border-radius: 25px;
     min-height: 100px;
     height: auto;
+}
+
+
+@media screen and(max-width: 768px)
+{
+  #map{
+    margin-top: -135%;
+  }
+  
 }
