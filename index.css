@@ -2,10 +2,9 @@ body{
     margin: 0;
   
     min-height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-  
-  
+   
+     
+    
     z-index: 1;
   }
 
@@ -13,7 +12,7 @@ body{
 
 .ip1{
     place-items: center;
-    background-image:url(/images/pattern-bg.png);
+    background-image:url(pattern-bg.png);
     text-align: center;
  height: 45vh;
     font-size: 24px;
@@ -62,7 +61,30 @@ z-index: 1;
 .search{
     padding: 10px;
 }
+
 .alldetails{
+    background-color: white;
+   width: 95%;
+   max-width: 1000px;
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+   height: auto;
+   top: 10%;
+   border-radius: 15px;
+   z-index: 1000;
+   position: relative;
+   margin-left: 25%;
+
+
+}
+.alldetails div{
+    width: 35%;
+    height: 55%;
+    border-right: 1px hsl(0, 0%, 17%) solid;
+    padding: 0 30px 0 30px;
+}
+/*.alldetails{
    
     display:grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
@@ -71,9 +93,9 @@ z-index: 1;
     padding: 10px;
     border-radius: 20px;
     z-index: 1;
-    
-  
-    margin-left: 23%;
+    margin-right: 20%;
+    margin-top:6%;
+    margin-left: 27%;
     border: black;
 }
 .ipaddress{
@@ -95,7 +117,7 @@ z-index: 1;
     z-index: 1;
     min-height: 100px;
     height: auto;
-}
+}*/
 #map{
     height: 100vh;
     flex: 1 1 70vh;
@@ -113,7 +135,7 @@ z-index: 1;
     margin-top: -10%;
 }
 
-.timezone1{
+/*.timezone1{
     background-color: rgb(253, 251, 251);
     border: 1px solid black;
     border-radius: var(--brd-radius);
@@ -134,17 +156,44 @@ z-index: 1;
     border-radius: 25px;
     min-height: 100px;
     height: auto;
-}
+}*/
 
 
-@media screen and(max-width: 768px)
+@media (max-width:768px)
 {
-  #map{
-    margin-top: -135%;
-  }
+  
   .alldetails{
+    flex-direction: column;
+   
+    flex-direction: column;
+    margin-left: -5%;
+    width: 60%;
+    margin-left: 70px;
+  }
+
+  .alldetails div{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    border-right: none;
   }
   
 }
+
+@media ( (min-width:900px)and (max-width:1400px ))
+{
+  .alldetails{
+    margin-left: 6%;
+   
+  }
+ 
+
+  
+  
+}
+
+
