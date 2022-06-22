@@ -15,7 +15,7 @@ body{
     place-items: center;
     background-image:url(/images/pattern-bg.png);
     text-align: center;
- height: 240px;
+ height: 270px;
     font-size: 24px;
     z-index: 1;
 }
