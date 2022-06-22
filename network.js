@@ -42,7 +42,7 @@ const  mymap = L.map('map').setView([51.505, -0.09], 13);
 
 
 const myIcon=L.icon({
-    iconUrl:'meri motto.png',
+    iconUrl:'/images/meri motto.png',
     iconSize:[25,35],
     iconAnchor: [25, 25]
 })
