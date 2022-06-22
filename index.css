@@ -142,5 +142,9 @@ z-index: 1;
   #map{
     margin-top: -135%;
   }
+  .alldetails{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 }
