@@ -7,7 +7,7 @@
 const myapi={
     ipaddress:'https://geo.ipify.org/api/v2/country,city?',
   
-    mykey:'at_eyWpXARshqkifrWRqrJxhJGPXHK46',
+  mykey:'at_y4IxirXgwZXREHBB75mG5kE9swO0a',
    
 };
 
