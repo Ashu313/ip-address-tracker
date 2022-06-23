@@ -10,7 +10,7 @@
 
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="index.css">
  
   
@@ -20,10 +20,12 @@
   
 
    <div id="loader" class="center"></div>
+   <div class="container flex-col body-background">
     <header class="ip1">
-   
-   <h1 class="color">Ip Address Tracker</h1>
-   <form id="form">
+ 
+   <h1 class="color position">Ip Address Tracker</h1>
+    </header>
+   <form id="form" class=" input-container position">
     <input type="text" class="novalidate" placeholder="search for any ip address or domain" id="input_form" required="true">
        <button   id="submit1" ><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
    
@@ -32,40 +34,43 @@
 
   
    
-   <div class="alldetails">
+   
+   <div class="alldetails position">
      
-       <div class="ipaddress" >
+       <div class="ipaddress position" >
          <p>IP ADDRESS</p>
          <h3 id="ip"></h3>
       
      
           </div>
 
-       <div class="location">
+       <div class="location position">
         <p>LOCATION</p>
         <h3 id="location1"></h3>
      
       </div>
 
        
-       <div class="timezone1">
+       <div class="timezone1 position">
         <p>TIMEZONE</p>
         <h3 id="timezone"></h3>
     
     </div>
       
-       <div class="isp1">
+       <div class="isp1 position">
         <p>ISP</p>
         <h3 id="isp"></h3>
      
    </div>
-</div>
-  </header>
+   </div>
 
   
-      <div id="map">map</div>
+<div id="map">map</div>
+  
+  
      </div>
- 
+    </body>
+
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
