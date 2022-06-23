@@ -108,7 +108,7 @@ h1{
     flex-direction: column;
     margin-left: -5%;
     width: 60%;
-    margin-left: 70px;
+   
   }
 
   .alldetails div{
@@ -120,6 +120,7 @@ h1{
     height: auto;
     min-height: 70px;
     border-right: none;
+      text-align:center;
   }
   
 }
